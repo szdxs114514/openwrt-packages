@@ -1,9 +1,9 @@
 name: Test Build
 
 on:
-  pull_request:
-    paths-ignore:
-      - '**.md'
+  workflow_dispatch:
+  schedule:
+    - cron: "* 2 * * *"
 
 jobs:
   build:
